@@ -1,0 +1,65 @@
+<md-dialog aria-label="{{Mango (Fruit)}}">
+  <form>
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h2>{{item.name}}</h2>
+      <span flex></span>
+      <md-button class="md-icon-button" ng-click="answer('not applicable')">
+        <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+      </md-button>
+    </div>
+  </md-toolbar>
+  <md-dialog-content>
+    <img style="margin: auto; max-width: 100%;" src="{{item.img1}}"></img>
+    <md-tabs md-border-bottom>
+      <md-tab label="Introduction">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Tab One</h1>
+          <p>簡介/Introduction:
+2015 將會係青春PoP Yeah 既年代 你問我咩係PoPYeah? 你問得真係好， 我亦都好樂意解答你既問題。 PoP全名係Purchasing of Production， 咁PoPYeah就係買Production既Yeah(野)! 2015 係一個追尋夢想既年代， 未來將會係年青追夢既世界， Pop出自己的夢想Pop-Up Store， 讓我們一起踏入PoPYeah的年代， 一起PoP住支持年青人們的創意，熱誠，夢想。 GoPoPYeah係一個提供第一手手作資訊的App， 當中包括最新市集資訊，市集登記等等的資訊， 讓你們輕鬆踏出第一步， 建立屬於自己的Pop-Up Store。 比擁有一個手作創業夢既你， 比喜愛香港創作既你， 比支持年青人們既你， 比有一門好手藝既你， 提供一個屬於新時代既手機平台， Go追夢PoP出個未來!!
+If you ask Why would us choose this name (GoPopYeah) as our tag, it would be my pleasure to introduce our dreams to you. POP stands for Purchasing of Production and these "Production"s are the mixture of different kinds of dream. We believe it is the high time for everyone to chase their own dreams. If you have ever one second thought of changing your life, just do it and we would definitely try our best to help you.</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="Functions & Features">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Tab Two</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et. Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante. Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
+          <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis. Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur, rhoncus sapien sit amet, tempus sapien.</p>
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="Video">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Tab Three</h1>
+          <video src="http://actcurate.com/images/MediaFile/Damage%20management.mp4"></video>
+        </md-content>
+      </md-tab>
+      <md-tab label="Terms of Service">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Tab Three</h1>
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="Privacy Policy">
+        <md-content class="md-padding">
+          <h1 class="md-display-2">Tab Three</h1>
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+
+  </md-dialog-content>
+  <div class="md-actions" layout="row">
+    <md-button href="http://en.wikipedia.org/wiki/Mango" target="_blank" hide show-md>
+      More on Wikipedia
+    </md-button>
+    <span flex></span>
+    <md-button ng-click="answer('not useful')" class="md-primary">
+     Not Useful
+    </md-button>
+    <md-button ng-click="answer('useful')" class="md-primary">
+      Useful
+    </md-button>
+  </div>
+  </form>
+</md-dialog>

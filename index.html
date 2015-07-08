@@ -2,7 +2,7 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Angular Material Basic App</title>
+  <title>CASL - APP Market</title>
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -28,7 +28,7 @@
       <md-icon> face </md-icon>
     </md-button>
     <h2>
-      <span>Toolbar with Icon Buttons</span>
+      <span>CASL - APP Market</span>
     </h2>
     <span flex></span>
     <md-button class="md-icon-button" aria-label="Favorite">
@@ -41,38 +41,30 @@
 </md-toolbar>
 
 <div layout="row" layout-sm="column" layout-margin layout-fill layout-padding>
-  <div flex>
+  <div flex ng-repeat="item in appmarket_items">
     <md-card>
-     <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out">
+     <img ng-src="{{item.img1}}" class="md-card-image" alt="Washed Out">
      <md-card-content>
-       <h2 class="md-title">Paracosm</h2>
+       <h2 class="md-title">{{item.name}}</h2>
        <p>
-         The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-         two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+         {{item.price}}
        </p>
      </md-card-content>
-     <div class="md-actions" layout="row" layout-align="end center">
-       <md-button>Action 1</md-button>
-       <md-button>Action 2</md-button>
+     <md-button class="md-primary md-raised" ng-click="showAdvanced($event, item)" flex flex-md="100">
+  More details
+</md-button>
+     <div class="md-actions" layout="row" layout-align="end center" >
+       <div ng-if="item.status == 0">
+         <md-button ng-click="getApp(item.id)">Get</md-button>
+       </div>
+       <div ng-if="item.status == 1">
+         <md-button ng-disabled="true">Currently Not Available </md-button>
+       </div>
+
      </div>
    </md-card>
   </div>
-  <div flex>
-    <md-card>
-     <img ng-src="https://material.angularjs.org/latest/img/washedout.png" class="md-card-image" alt="Washed Out">
-     <md-card-content>
-       <h2 class="md-title">Paracosm</h2>
-       <p>
-         The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-         two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-       </p>
-     </md-card-content>
-     <div class="md-actions" layout="row" layout-align="end center">
-       <md-button>Action 1</md-button>
-       <md-button>Action 2</md-button>
-     </div>
-   </md-card>
-  </div>
+
 </div>
 
     </md-content>
